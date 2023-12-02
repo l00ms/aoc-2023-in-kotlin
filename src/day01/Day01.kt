@@ -1,3 +1,9 @@
+package day01
+
+import extractCalibrationValue
+import readInput
+import stringToDigitMap
+
 fun main() {
     fun part1(input: List<String>): Int {
         return input.sumOf { solvePart1(it) }
