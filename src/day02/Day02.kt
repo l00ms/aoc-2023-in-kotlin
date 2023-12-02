@@ -20,13 +20,12 @@ fun main() {
     part2(input).also { println("Day02_P2_Solution: $it") }
 }
 
-val bag = mutableMapOf(
-        "red" to 12,
-        "green" to 13,
-        "blue" to 14
-)
-
 fun solvePart1(line: String): Int {
+    val bag = mutableMapOf(
+            "red" to 12,
+            "green" to 13,
+            "blue" to 14
+    )
     val (gameID, draws) = extractGameIdAndDraws(line)
     val validDraws = mutableListOf<Boolean>()
     draws.forEach { draw ->
